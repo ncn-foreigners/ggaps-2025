@@ -1,0 +1,9 @@
+"1","
+"
+"1","
+Term: treat
+Type: probs
+Comparison: TRUE - FALSE
+
+"
+"0","avg_comparisons(fit_distribu, variables = ""treat"", newdata = subset(treat == 1))"

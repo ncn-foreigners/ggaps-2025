@@ -1,0 +1,28 @@
+{
+    "id": "04CEA915",
+    "path": "~/mac/nauka/ncn-foreigners/conferences/ggaps-2025/code.Rmd",
+    "project_path": "code.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1757405616669.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "42,23",
+        "scrollLine": "37"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1757412570,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1757412570286,
+    "read_only": false,
+    "read_only_alternatives": []
+}

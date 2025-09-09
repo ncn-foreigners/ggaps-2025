@@ -1,0 +1,86 @@
+"0","standard <- weightit(treat ~ db040 + pb220a + pl030_new + age + I(age^2),"
+"0","                     data = eusilc_singles, estimand = ""ATT"", method = ""ebal"", "
+"0","                     s.weights = eusilc_singles$s_weight)"
+"0",""
+"0","distribu <- weightit(treat ~ db040 + pb220a + pl030_new + age + I(age^2),"
+"0","                     data = eusilc_singles, estimand = ""ATT"", method = ""ebal"", "
+"0","                     s.weights = eusilc_singles$s_weight, "
+"0","                     quantile = list(age = seq(0.1, 0.9, 0.1)))"
+"0",""
+"0",""
+"0","bal.tab(standard, stats = c(""m"", ""v"", ""ks""), thresholds = c(m = .05))"
+"1","[4mBalance Measures[24m
+                       Type Diff.Adj     M.Threshold V.Ratio.Adj KS.Adj
+db040_Burgenland     Binary        0 Balanced, <0.05           . 0.0000
+db040_Carinthia      Binary       -0 Balanced, <0.05           . 0.0000
+db040_Lower Austria  Binary       -0 Balanced, <0.05           . 0.0000
+db040_Salzburg       Binary        0 Balanced, <0.05           . 0.0000
+db040_Styria         Binary       -0 Balanced, <0.05           . 0.0000
+db040_Tyrol          Binary       -0 Balanced, <0.05           . 0.0000
+db040_Upper Austria  Binary        0 Balanced, <0.05           . 0.0000
+db040_Vienna         Binary        0 Balanced, <0.05           . 0.0000
+db040_Vorarlberg     Binary        0 Balanced, <0.05           . 0.0000
+pb220a_AT            Binary       -0 Balanced, <0.05           . 0.0000
+pb220a_EU            Binary       -0 Balanced, <0.05           . 0.0000
+pb220a_Other         Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_1          Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_2          Binary       -0 Balanced, <0.05           . 0.0000
+pl030_new_3          Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_4          Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_5          Binary       -0 Balanced, <0.05           . 0.0000
+pl030_new_6          Binary        0 Balanced, <0.05           . 0.0000
+age                 Contin.       -0 Balanced, <0.05      0.9977 0.0589
+I(age^2)            Contin.       -0 Balanced, <0.05      0.9079 0.0589
+
+[4mBalance tally for mean differences[24m
+                    count
+Balanced, <0.05        20
+Not Balanced, >0.05     0
+
+[4mVariable with the greatest mean difference[24m
+ Variable Diff.Adj     M.Threshold
+ I(age^2)       -0 Balanced, <0.05
+
+[4mEffective sample sizes[24m
+            FALSE    TRUE
+Unadjusted 640.71 1067.36
+Adjusted   308.17 1067.36
+"
+"0","bal.tab(distribu, stats = c(""m"", ""v"", ""ks""), thresholds = c(m = .05))"
+"1","[4mBalance Measures[24m
+                       Type Diff.Adj     M.Threshold V.Ratio.Adj KS.Adj
+db040_Burgenland     Binary       -0 Balanced, <0.05           . 0.0000
+db040_Carinthia      Binary       -0 Balanced, <0.05           . 0.0000
+db040_Lower Austria  Binary       -0 Balanced, <0.05           . 0.0000
+db040_Salzburg       Binary       -0 Balanced, <0.05           . 0.0000
+db040_Styria         Binary       -0 Balanced, <0.05           . 0.0000
+db040_Tyrol          Binary        0 Balanced, <0.05           . 0.0000
+db040_Upper Austria  Binary       -0 Balanced, <0.05           . 0.0000
+db040_Vienna         Binary        0 Balanced, <0.05           . 0.0000
+db040_Vorarlberg     Binary       -0 Balanced, <0.05           . 0.0000
+pb220a_AT            Binary       -0 Balanced, <0.05           . 0.0000
+pb220a_EU            Binary        0 Balanced, <0.05           . 0.0000
+pb220a_Other         Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_1          Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_2          Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_3          Binary        0 Balanced, <0.05           . 0.0000
+pl030_new_4          Binary       -0 Balanced, <0.05           . 0.0000
+pl030_new_5          Binary       -0 Balanced, <0.05           . 0.0000
+pl030_new_6          Binary        0 Balanced, <0.05           . 0.0000
+age                 Contin.       -0 Balanced, <0.05      0.9970 0.0279
+I(age^2)            Contin.       -0 Balanced, <0.05      0.9791 0.0279
+
+[4mBalance tally for mean differences[24m
+                    count
+Balanced, <0.05        20
+Not Balanced, >0.05     0
+
+[4mVariable with the greatest mean difference[24m
+ Variable Diff.Adj     M.Threshold
+      age       -0 Balanced, <0.05
+
+[4mEffective sample sizes[24m
+            FALSE    TRUE
+Unadjusted 640.71 1067.36
+Adjusted   254.22 1067.36
+"

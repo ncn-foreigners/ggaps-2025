@@ -1,0 +1,4 @@
+"0","data(""ses"")"
+"0","ses$treat <- ses$sex == ""female"""
+"0","ses$s_weight <- ses$weights/mean(ses$weights)"
+"0","head(ses)"
