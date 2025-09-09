@@ -25,3 +25,4 @@ implementing proposed methods is available.
 
 -   Working paper: [arxiv](https://arxiv.org/abs/2310.11969)
 -   Example from the poster: `code.Rmd`
+-   Poster: https://www.overleaf.com/read/jjrfbkbpttdb#1202f3

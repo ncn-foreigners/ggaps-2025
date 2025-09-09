@@ -1,33 +1,33 @@
-"0","bal.tab(ses_standard, stats = c(""m"", ""v"", ""ks""), thresholds = c(m = .05))"
+"0","bal.tab(ses_standard, stats = c(""m"", ""v"", ""ks"", ""ovl""), thresholds = c(m = .05))"
 "1","[4mBalance Measures[24m
-                                    Type Diff.Adj     M.Threshold V.Ratio.Adj KS.Adj
-age_(0,15]                        Binary        0 Balanced, <0.05           . 0.0000
-age_(15,29]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(29,39]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(39,49]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(49,59]                       Binary       -0 Balanced, <0.05           . 0.0000
-age_(59,120]                      Binary       -0 Balanced, <0.05           . 0.0000
-location_AT1                      Binary       -0 Balanced, <0.05           . 0.0000
-location_AT2                      Binary        0 Balanced, <0.05           . 0.0000
-location_AT3                      Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 0 and 1           Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 2                 Binary       -0 Balanced, <0.05           . 0.0000
-education_ISCED 3 and 4           Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 5A                Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 5B                Binary       -0 Balanced, <0.05           . 0.0000
-contract_apprentice               Binary        0 Balanced, <0.05           . 0.0000
-contract_indefinite duration      Binary       -0 Balanced, <0.05           . 0.0000
-contract_temporay/fixed duration  Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(-1,0]              Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(0,5]               Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(5,9]               Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(9,14]              Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(14,19]             Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(19,29]             Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(29,39]             Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(39,55]             Binary       -0 Balanced, <0.05           . 0.0000
-weeks                            Contin.       -0 Balanced, <0.05      1.0604 0.0226
-hoursPaid                        Contin.        0 Balanced, <0.05      0.7526 0.1025
+                                    Type Diff.Adj     M.Threshold V.Ratio.Adj KS.Adj OVL.Adj
+age_(0,15]                        Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(15,29]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(29,39]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(39,49]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(49,59]                       Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+age_(59,120]                      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+location_AT1                      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+location_AT2                      Binary        0 Balanced, <0.05           . 0.0000  0.0000
+location_AT3                      Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 0 and 1           Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 2                 Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 3 and 4           Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 5A                Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 5B                Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+contract_apprentice               Binary        0 Balanced, <0.05           . 0.0000  0.0000
+contract_indefinite duration      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+contract_temporay/fixed duration  Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(-1,0]              Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(0,5]               Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(5,9]               Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(9,14]              Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(14,19]             Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(19,29]             Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(29,39]             Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(39,55]             Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+weeks                            Contin.       -0 Balanced, <0.05      1.0604 0.0226  0.0408
+hoursPaid                        Contin.        0 Balanced, <0.05      0.7526 0.1025  0.1539
 
 [4mBalance tally for mean differences[24m
                     count
@@ -43,36 +43,36 @@ Not Balanced, >0.05     0
 Unadjusted 4871.12 3298.55
 Adjusted   1540.07 3298.55
 "
-"0","bal.tab(ses_distribu, stats = c(""m"", ""v"", ""ks""), thresholds = c(m = .05))"
+"0","bal.tab(ses_distribu, stats = c(""m"", ""v"", ""ks"", ""ovl""), thresholds = c(m = .05))"
 "1","[4mBalance Measures[24m
-                                    Type Diff.Adj     M.Threshold V.Ratio.Adj KS.Adj
-age_(0,15]                        Binary       -0 Balanced, <0.05           . 0.0000
-age_(15,29]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(29,39]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(39,49]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(49,59]                       Binary        0 Balanced, <0.05           . 0.0000
-age_(59,120]                      Binary       -0 Balanced, <0.05           . 0.0000
-location_AT1                      Binary       -0 Balanced, <0.05           . 0.0000
-location_AT2                      Binary       -0 Balanced, <0.05           . 0.0000
-location_AT3                      Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 0 and 1           Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 2                 Binary       -0 Balanced, <0.05           . 0.0000
-education_ISCED 3 and 4           Binary       -0 Balanced, <0.05           . 0.0000
-education_ISCED 5A                Binary        0 Balanced, <0.05           . 0.0000
-education_ISCED 5B                Binary        0 Balanced, <0.05           . 0.0000
-contract_apprentice               Binary       -0 Balanced, <0.05           . 0.0000
-contract_indefinite duration      Binary       -0 Balanced, <0.05           . 0.0000
-contract_temporay/fixed duration  Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(-1,0]              Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(0,5]               Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(5,9]               Binary        0 Balanced, <0.05           . 0.0000
-lengthService_(9,14]              Binary       -0 Balanced, <0.05           . 0.0000
-lengthService_(14,19]             Binary       -0 Balanced, <0.05           . 0.0000
-lengthService_(19,29]             Binary       -0 Balanced, <0.05           . 0.0000
-lengthService_(29,39]             Binary       -0 Balanced, <0.05           . 0.0000
-lengthService_(39,55]             Binary       -0 Balanced, <0.05           . 0.0000
-weeks                            Contin.       -0 Balanced, <0.05      0.9741 0.0120
-hoursPaid                        Contin.       -0 Balanced, <0.05      0.9764 0.0718
+                                    Type Diff.Adj     M.Threshold V.Ratio.Adj KS.Adj OVL.Adj
+age_(0,15]                        Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+age_(15,29]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(29,39]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(39,49]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(49,59]                       Binary        0 Balanced, <0.05           . 0.0000  0.0000
+age_(59,120]                      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+location_AT1                      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+location_AT2                      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+location_AT3                      Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 0 and 1           Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 2                 Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 3 and 4           Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 5A                Binary        0 Balanced, <0.05           . 0.0000  0.0000
+education_ISCED 5B                Binary        0 Balanced, <0.05           . 0.0000  0.0000
+contract_apprentice               Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+contract_indefinite duration      Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+contract_temporay/fixed duration  Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(-1,0]              Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(0,5]               Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(5,9]               Binary        0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(9,14]              Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(14,19]             Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(19,29]             Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(29,39]             Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+lengthService_(39,55]             Binary       -0 Balanced, <0.05           . 0.0000  0.0000
+weeks                            Contin.       -0 Balanced, <0.05      0.9741 0.0120  0.0144
+hoursPaid                        Contin.       -0 Balanced, <0.05      0.9764 0.0718  0.0850
 
 [4mBalance tally for mean differences[24m
                     count

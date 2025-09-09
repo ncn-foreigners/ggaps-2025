@@ -16,24 +16,27 @@ library("marginaleffects")
 data("ses")
 ses$treat <- ses$sex == "female"
 ses$s_weight <- ses$weights/mean(ses$weights)
+ses$occup1 <- substr(ses$occupation,1,1)
 head(ses)
 ```
 
 ```{r}
 ses_standard <- weightit(treat ~ age + location + education + contract + lengthService + weeks + hoursPaid,
-                     data = ses, estimand = "ATT", method = "ebal", 
+                     data = ses, 
+                     estimand = "ATT", method = "ebal", 
                      s.weights = ses$s_weight)
 
 ses_distribu <- weightit(treat ~ age + location + education + contract + lengthService  + weeks + hoursPaid,
-                     data = ses, estimand = "ATT", method = "ebal", 
+                     data = ses, 
+                     estimand = "ATT", method = "ebal", 
                      s.weights = ses$s_weight, 
-                     quantile = list(hoursPaid = c(0.1, 0.25, 0.5, 0.75, 0.9),
-                                     weeks = c(0.1, 0.25, 0.5, 0.75, 0.9)))
+                     quantile = list(hoursPaid = c(0.10, 0.25, 0.5, 0.75, 0.90),
+                                     weeks = c(0.10, 0.25, 0.5, 0.75, 0.90)))
 ```
 
 ```{r}
-bal.tab(ses_standard, stats = c("m", "v", "ks"), thresholds = c(m = .05))
-bal.tab(ses_distribu, stats = c("m", "v", "ks"), thresholds = c(m = .05))
+bal.tab(ses_standard, stats = c("m", "v", "ks", "ovl"), thresholds = c(m = .05))
+bal.tab(ses_distribu, stats = c("m", "v", "ks", "ovl"), thresholds = c(m = .05))
 ```
 
 ```{r}

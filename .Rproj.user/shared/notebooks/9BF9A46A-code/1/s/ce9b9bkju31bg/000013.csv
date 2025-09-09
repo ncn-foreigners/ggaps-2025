@@ -1,8 +1,8 @@
-"1","
-"
-"1","
-Term: treat
-Type: probs
-Comparison: TRUE - FALSE
-
-"
+"0","fit_standard <- lm_weightit(eqIncome ~ treat*(db040 + pb220a + pl030_new + age + I(age^2)),"
+"0","                            data = eusilc_singles, weightit = standard)"
+"0",""
+"0","fit_distribu <- lm_weightit(eqIncome ~ treat*(db040 + pb220a + pl030_new + age + I(age^2)),"
+"0","                            data = eusilc_singles, weightit = distribu)"
+"0",""
+"0",""
+"0","avg_comparisons(fit_standard, variables = ""treat"", newdata = subset(treat == 1))"
