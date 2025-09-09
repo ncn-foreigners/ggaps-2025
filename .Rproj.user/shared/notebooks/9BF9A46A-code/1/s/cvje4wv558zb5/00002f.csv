@@ -1,5 +1,0 @@
-"0","data(""ses"")"
-"0","ses$treat <- ses$sex == ""female"""
-"0","ses$s_weight <- ses$weights/mean(ses$weights)"
-"0","ses$occup1 <- substr(ses$occupation,1,1)"
-"0","head(ses)"
